@@ -1,0 +1,132 @@
+
+@width : 1000px;
+@height:840px;
+.containerMy{
+  display: flex;
+  width: 1080px;
+  background-color: #f3f3f3;
+  margin:0 auto;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  overflow: hidden;
+}
+.containerBody{
+  background: #fff;
+  width: @width;
+  border: 1px solid #b0d5f0;
+  border-radius: 2px;
+  padding: 15px;
+  float: left;
+
+}
+.containerTop{
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.containerTop img{
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+.containerTopRight{
+  display: flex;
+  flex-grow: 1;
+  justify-content:space-between;
+  align-items: flex-end;
+  margin-left: 10px;
+  border-bottom: 2px solid #3f7bad;
+  height: 100%;
+  margin-top: -5px;
+  float: left;
+  width: @width - 110px;
+}
+/**style={{fontSize:'24px',lineHeight:'40px'}}*/
+/**style={{lineHeight:'25px',fontSize:'14px'}}*/
+.containerTopRight span{
+  display: inline-block;
+}
+.containerTopRight span.applyType{
+  font-size: 24px;
+  line-height: 60px;
+  float: left;
+  height: 100%;
+}
+.containerTopRight span.applyCode{
+  font-size: 14px;
+  line-height: 25px;
+  height: 100%;
+  line-height: 65px;
+  float: right;
+}
+/*中间的模块*/
+.containerCenter{
+  display: flex;
+  padding-top: 20px;
+  overflow: hidden;
+  min-height: 678px;
+
+}
+.containerLeft{
+  width: 14%;
+  line-height: 50px;
+  flex-grow: 0;
+  float: left;
+  border-right: 1px dotted gray;
+  margin-left: -15px;
+  height: 100%;
+}
+.containerLeft span,.containerLeft div{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.containerLeft div{
+  height: 110px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.containerLeft .erect{
+  width: 1px;
+  height: 30px;
+  background: #c9c9c9;
+  height: 80px;
+  margin:2px 0px;
+  margin-left: 50%;
+}
+.containerRight{
+  width: 85%;
+  display: flex;
+  flex-grow: 0;
+  justify-content: center;
+  float: right;
+  margin-left: 20px;
+  height: 100%;
+}
+
+body .ant-btn-lg{
+   padding: 3px 15px 3px 15px\9 ;
+}
+
+body .ant-tooltip-inner{
+   padding: 12px 10px 0px 10px\9;
+}
+
+body .has-success.has-feedback:after,body .has-error.has-feedback:after{
+  margin-right: 15px;
+}
+
+
+button{
+  position: relative
+}
+
+icon{
+  position: absolute;
+  left:5px;
+  top:3px;
+}
