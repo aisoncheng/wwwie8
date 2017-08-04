@@ -1,0 +1,244 @@
+
+
+/**
+ common css
+*/
+.disabled{
+    cursor: not-allowed;
+}
+.error{
+    position: absolute;
+    color: red;
+    padding: 2px ;
+}
+.icon{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url('./icon.png') no-repeat;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    opacity:1;
+}
+
+.right{
+    background-position: 0px 0px;
+}
+
+.wrong{
+    background-position: -17px 0px;
+}
+
+/****
+ * 
+ * input css
+ */
+
+ .inputContainer {
+     position: relative;
+     display: block;
+     input{
+        border: 1px solid #d9d9d9;
+        padding-left: 10px;
+        border-radius: 3px;
+        transition: border .2s cubic-bezier(.645,.045,.355,1),background .2s cubic-bezier(.645,.045,.355,1),box-shadow .2s cubic-bezier(.645,.045,.355,1);
+        height: 18px;
+        padding: 6px 0px 6px 0px;
+        line-height: 1.5;
+        padding-left: 10px;
+        
+    
+     }
+    input:focus{
+     outline: none;
+    }
+    input:hover{
+      border-color: #57c5f7;
+    }
+    input.error{
+     outline: none;
+     border: 1px solid red;
+     box-shadow: 0 0 0 2px rgba(255,85,0,.2);
+    }
+    
+ }
+
+
+ /**
+    button css 
+ */
+ .buttonContainer {
+     position: relative;
+     display: inline-block;
+     padding: 1px;
+     button{
+         display: inline-block;
+         padding: 7px 15px 7px 15px;
+         background: none;
+         outline: none;
+         border: 1px solid #d9d9d9;
+         webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+         transition: all .3s cubic-bezier(.645,.045,.355,1);
+         border-radius: 3px;
+         cursor: pointer;
+     }
+     button.primary{
+        color: #fff;
+        background-color: #2db7f5;
+        border-color: #2db7f5;
+     }
+     button.disabled{
+        color: #ccc;
+        background-color: #f7f7f7;
+        border-color: #d9d9d9;
+        cursor: not-allowed
+     }
+ }
+
+ /*
+    checkbox  css 
+*/
+.checkboxContainer{
+    display: inline-block;
+    padding: 2px;
+    overflow: hidden;
+    .boxOne{
+        float: left;
+        position: relative;
+        overflow: hidden;
+        padding: 1px;
+        margin-top: 2px;
+    }
+    .checkboxSpan{
+        display: inline-block;
+        position: absolute;
+        left: 0px;
+        top:0px;
+        border-radius: 2px;
+        background-color: #fff;
+        border: 1px solid #d9d9d9;
+        cursor: pointer;
+    }
+    .radioSpan{
+        display: inline-block;
+        position: absolute;
+        left: 0px;
+        top:0px;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+    .content{
+        cursor: pointer;
+        margin-left: 10px;
+        overflow: hidden;
+        float: left;
+    }
+    input.radio{
+        opacity: 1;
+        filter: alpha(opacity=100);
+        display: inline-block;
+        position: absolute;
+        left: 0px;
+        top:0px;
+        padding: 0px;
+        border: none;
+        outline: none;
+        margin: 0px;
+        cursor: pointer;
+        margin-top: 2px;
+    }
+    input.checkbox{
+        opacity: 0;
+        filter: alpha(opacity=0);
+        display: inline-block;
+        position: absolute;
+        left: 0px;
+        top:0px;
+        padding: 0px;
+        border: none;
+        outline: none;
+        margin: 0px;
+        border: 1px solid #d9d9d9;
+        cursor: pointer;
+    }
+    .checkboxSpan.checked {
+         border-color: #2db7f5;
+         background-color: #2db7f5;
+         webkit-transition: all .4s cubic-bezier(.12,.4,.29,1.46) .1s;
+         transition: all .4s cubic-bezier(.12,.4,.29,1.46) .1s;
+    }
+    .checkboxSpan.checked::after{
+        webkit-transform: rotate(45deg) scale(1);
+        -ms-transform: rotate(45deg) scale(1);
+        transform: rotate(45deg) scale(1);
+        position: absolute;
+        left: 4px;
+        top: 1px;
+        display: table;
+        width: 5px;
+        height: 8px;
+        border: 2px solid #fff;
+        border-top: 0;
+        border-left: 0;
+        content: " ";
+        -webkit-transition: all .2s cubic-bezier(.12,.4,.29,1.46) .1s;
+        transition: all .2s cubic-bezier(.12,.4,.29,1.46) .1s; 
+    }
+    
+}
+
+/**
+    formitem css
+*/
+.formItem{
+    margin-bottom: 24px;
+    overflow: hidden;
+    .required{
+        display: inline-block;
+        height: 14px;
+        line-height: 14px;
+        text-align: center;
+        color: red;
+    }
+    .label{
+        color: #666;
+       
+        text-align: right;
+        padding: 7px 0px;
+        vertical-align: middle;
+        float: left;
+    }
+    .content{
+       
+        position: relative;
+        float: left;
+        .checkboxContainer {
+            position: relative;
+            top: 5px;
+        }
+    }
+}
+
+ /**
+    tips css 
+*/
+.tipsContent{
+   min-height: 20px;
+}
+
+/**
+  layout css
+*/
+
+.row {
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.col{
+    display: inline-block;
+}
+
+

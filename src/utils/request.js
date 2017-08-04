@@ -1,5 +1,4 @@
 
-import { Modal } from 'antd';
 import { tools } from '../utils';
 
 function Fetch(){

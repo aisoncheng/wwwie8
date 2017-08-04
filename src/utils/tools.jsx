@@ -1,4 +1,4 @@
-import { Checkbox, Modal,Radio } from 'antd';
+import { Radio } from '../core';
 import React from 'react';
 import cityDict from './cityDic';
 
@@ -362,14 +362,14 @@ function getDefaultRules(msg, require) {
     message: msg,
   }];
 }
-/**
- * 获取label
- **/
-function getLabel(label, props) {
-  return (
-    <Checkbox {...props}><span>{label}</span></Checkbox>
-  );
-}
+// /**
+//  * 获取label
+//  **/
+// function getLabel(label, props) {
+//   return (
+//     <Checkbox {...props}><span>{label}</span></Checkbox>
+//   );
+// }
 
 /**
  * 获取经济类型
@@ -465,7 +465,6 @@ export default {
   getCookieAcce,
   getCookieOrg,
   getDefaultRules,
-  getLabel,
   getEcoTypeByCode,
   EcoTypeCfg,
   PlaceOwner,
